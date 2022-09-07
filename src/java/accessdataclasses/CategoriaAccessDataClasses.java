@@ -56,4 +56,19 @@ public class CategoriaAccessDataClasses {
         }
         
     }
+    
+     public static boolean ctgrSuperior(int ctgr){
+        try {
+            String sql="{call sp_contarSubCategoria(?)}";
+            Connection c = Conexion.conectar();
+            CallableStatement sentencia =(CallableStatement) c.prepareCall(sql);
+            sentencia.setInt(1, ctgr);
+            ResultSet resultado = sentencia.executeQuery();
+            resultado.next();
+            return resultado.getInt("cantidad") > 0;
+        } catch (SQLException ex) {
+            return false;
+        }
+        
+    }
 }

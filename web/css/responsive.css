@@ -35,7 +35,7 @@
 }
 
 
-/* sm */
+/*===============>>>>>>>>> Start Screen Small <<<<<<<<<=================*/
 @media (min-width: 768px) and (max-width: 991px) {
    
 .shop-menu ul li a{
@@ -110,6 +110,11 @@
 	font-size: 20px;
 }
 
+.companyinfo img{
+    height: 80px;
+    width: 80px;
+}
+
 .address {
 	margin-top: 48px;
 	margin-left: 20px;
@@ -121,8 +126,11 @@
 }
 
 }
+/*===============>>>>>>>>> End Screen Small <<<<<<<<<=================*/
 
-/* xs */
+
+
+/*===============>>>>>>>>> Start Screen Extra Small <<<<<<<<<=================*/
 @media (max-width: 767px) {
 
 .header_top .col-sm-6:first-child{
@@ -144,6 +152,7 @@
 .social-icons ul li a i {
 	padding: 8px 10px;
 }
+
 
 .shop-menu.pull-right{
 	float: none !important;
@@ -215,6 +224,10 @@ ul.sub-menu{
   box-shadow: none;
 }
 
+.menu-mobile{
+    background-color: #2f3192;
+}
+
 .header-bottom{
 	position: relative;
 }
@@ -277,8 +290,10 @@ ul.sub-menu{
 }
 
 }
+/*===============>>>>>>>>> End Screen Extra Small <<<<<<<<<=================*/
 
-/* XS Portrait */
+
+/*===============>>>>>>>>> Start Screen Extra Small Portrait <<<<<<<<<=================*/
 @media (max-width: 480px) {
 
 .contactinfo{
@@ -318,10 +333,14 @@ ul.sub-menu{
 	display: inline-block;
 }
 
-.logo{
-	text-align: center;
-        height: 80px;
-	width: 80px;
+.logocompany img{
+        height: 60px;
+	width: 60px;
+}
+
+a.branding{
+ height:auto;
+ width: auto;
 }
 
 .shop-menu ul li {
@@ -401,7 +420,9 @@ ul.sub-menu{
   box-shadow: none;
 }
 
-
+.menu-mobile{
+    background-color: #2f3192;
+}
 .item{
 	padding-left: 0;
 }
@@ -526,3 +547,5 @@ ul.sub-menu{
 }
 
 }
+
+/*===============>>>>>>>>> End Screen Extra Small Portrait <<<<<<<<<=================*/
